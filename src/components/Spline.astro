@@ -1,0 +1,16 @@
+---
+interface Props {
+  url: string
+  width?: number
+  height?: number
+  unloadable?: boolean
+  backgroundColor?: string
+  class?: string | Array<string>
+  loading?: 'auto' | 'lazy' | 'eager'
+}
+---
+
+<spline-viewer {...Astro.props}></spline-viewer>
+
+<!-- or just `src="@splinetool/viewer"` if pkg installed locally -->
+<script src="https://esm.sh/@splinetool/viewer"></script>

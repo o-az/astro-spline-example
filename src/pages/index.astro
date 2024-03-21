@@ -1,0 +1,20 @@
+---
+import Spline from '#components/Spline.astro'
+
+// you can use local splinecode file too
+const splinecode = "https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode"
+---
+
+<main>
+	<Spline
+		loading="eager"
+		url={splinecode}
+	/>
+</main>
+
+<style>
+	main {
+		width: 100wh;
+		height: 100vh;
+	}
+</style>
